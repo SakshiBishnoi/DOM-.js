@@ -9,7 +9,20 @@ for(let sqImg of sqImages) {
     sqImg.src = 'https://img.freepik.com/free-vector/set-bakery-stickers-with-pastries-bread_23-2147789161.jpg?w=1380&t=st=1708947269~exp=1708947869~hmac=0eec9f1d10f4e507bbb3d170dbda90a676bf2592789d958c330f4237501be9b6' ;
 }
 
-let links = document.querySelectorAll('p a')
-for (let link of links){
-    console.log(link.href);
+// let links = document.querySelectorAll('p a')
+// for (let link of links){
+//     console.log(link.href);
+// }
+
+let TLinks = document.querySelectorAll( '.toctext' );
+for(let tlink of TLinks){
+    tlink.innerText = 'Cookies are Yummm!';
+    //tlink.style.textDecorationColor='red';
+    
+}
+
+let allLinks = document.querySelectorAll( 'a' );
+for(let alink of allLinks){
+    alink.style.color = 'rgba(255,0,0,.3)';
+    alink.style.textDecorationColor='red';
 }
